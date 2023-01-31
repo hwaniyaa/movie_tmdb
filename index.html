@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+
+    <title>TMDB</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- google 웹폰트 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="./js/gsap/gsap.min.js"></script>
+    <script src="./js/search.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>MOVIE <strong>SEARCH</strong></h1>
+    </header>
+    <!-- prettier-ignore -->
+    <div class="search-box">
+      <input type="text" class="search-txt" /> 
+      <button class="btn-search"><span class="material-icons"> search </span></button>
+    </div>
+    <ul class="recent-search-word">
+      <!-- <li>전지현</li>
+      <li>김태희</li> -->
+    </ul>
+    <ul class="list"></ul>
+    <button class="btn-more">더보기</button>
+    <aside class="movie-detail"></aside>
+  </body>
+</html>
